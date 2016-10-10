@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
+});
+
+Route::get('cargar_producto', function () {
+    return view('cargar_producto');
+});
+
+
+Route::post('validar_producto', function () {
+    return view('validar_producto');
 });
